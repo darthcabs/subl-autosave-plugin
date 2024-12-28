@@ -1,2 +1,6 @@
 # subl-autosave-plugin
-Sublime Text plugin for autosaving open files in a given folder
+## Sublime Text plugin for autosaving open files in a given folder.
+
+The idea is that the folder, specified in `~/darth_sublime_insync`, is being synced by any cloud storage client, e.g. Google Drive, OneDrive, Insync, DropBox, so that every tab created in Sublime Text in your current computer will be given a default name and saved in the cloud by Insync and readily available accross all your computers.
+
+You create an empty tab, fill it with quick data you need, and as soon as it loses focus, this plugin will check for `~/darth_sublime_insync`, get the folder path that points to the folder you already sync to the cloud, for example `~/Insync/dav.cardoso@gmail.com/Google Drive/Work` where Work is the folder being synced from my Google Drive, and then specifies a project name that you can change whenever you're in a new project/task. That's it, every tab that is not empty, but it is also not saved, will be saved, without ever asking you for a file name. It will be saved `~/Insync/dav.cardoso@gmail.com/Google Drive/Work/{project_name}/subl_yyymmdd_hhmmss.txt`.
